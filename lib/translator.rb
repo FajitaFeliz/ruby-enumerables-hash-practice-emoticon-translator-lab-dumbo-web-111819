@@ -1,4 +1,4 @@
-require "yaml" # require modules here
+require "yaml"
 
 def load_library(file_path)
   source = YAML.load_file(file_path)
@@ -25,4 +25,3 @@ def get_english_meaning(file_path = "./lib/emoticons.yml", emoticon)
     return "Sorry, that emoticon was not found"
   end
 end
-
